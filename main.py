@@ -20,7 +20,7 @@ out_img_num = 1000
 for i in range(out_img_num):
 	print("Colorization image {0}".format(i+1))
 	opt.img_path = "./imgs/val_256/Places365_val_" + str(i+1).zfill(8) + ".jpg"
-	img_gray_path = "./imgs/val_256_gray/Places365_val_" + str(i+1).zfill(8) + ".jpg"
+	img_gray_path = "./imgs/val_256_gray/Places365_val_" + str(i+1) + ".jpg"
 	img = load_img(opt.img_path,img_gray_path)
 	(tens_l_orig, tens_l_rs) = preprocess_img(img, HW=(256,256))
 	if(opt.use_gpu):
