@@ -1,0 +1,6 @@
+/.idea/
+/imgs/
+/imgs_out/
+_pycache_/
+
+*.pyc
